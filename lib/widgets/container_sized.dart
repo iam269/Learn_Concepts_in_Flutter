@@ -14,7 +14,7 @@ import 'package:flutter/material.dart';
 // EXEMPLUL 1: Container cu dimensiuni și styling
 // ============================================================================
 class ContainerExample extends StatelessWidget {
-  const ContainerExample({Key? key}) : super(key: key);
+  const ContainerExample({super.key});
 
   @override
   Widget build(BuildContext context) {
@@ -29,7 +29,7 @@ class ContainerExample extends StatelessWidget {
         border: Border.all(color: Colors.red, width: 3), // Bordură
         boxShadow: [
           BoxShadow(
-            color: Colors.black.withOpacity(0.3),
+            color: Colors.black.withValues(alpha: 0.3),
             blurRadius: 10,
             offset: const Offset(5, 5),
           ),
@@ -49,7 +49,7 @@ class ContainerExample extends StatelessWidget {
 // EXEMPLUL 2: SizedBox - doar pentru dimensiuni (mai performant)
 // ============================================================================
 class SizedBoxExample extends StatelessWidget {
-  const SizedBoxExample({Key? key}) : super(key: key);
+  const SizedBoxExample({super.key});
 
   @override
   Widget build(BuildContext context) {
@@ -69,7 +69,7 @@ class SizedBoxExample extends StatelessWidget {
 // EXEMPLUL 3: SizedBox pentru spațiere (în loc de Container gol)
 // ============================================================================
 class SizedBoxSpacingExample extends StatelessWidget {
-  const SizedBoxSpacingExample({Key? key}) : super(key: key);
+  const SizedBoxSpacingExample({super.key});
 
   @override
   Widget build(BuildContext context) {
@@ -90,7 +90,7 @@ class SizedBoxSpacingExample extends StatelessWidget {
 // EXEMPLUL 4: SizedBox.expand() - umple tot spațiul disponibil
 // ============================================================================
 class SizedBoxExpandExample extends StatelessWidget {
-  const SizedBoxExpandExample({Key? key}) : super(key: key);
+  const SizedBoxExpandExample({super.key});
 
   @override
   Widget build(BuildContext context) {
@@ -105,7 +105,7 @@ class SizedBoxExpandExample extends StatelessWidget {
 // EXEMPLUL 5: Container cu gradient
 // ============================================================================
 class ContainerGradientExample extends StatelessWidget {
-  const ContainerGradientExample({Key? key}) : super(key: key);
+  const ContainerGradientExample({super.key});
 
   @override
   Widget build(BuildContext context) {
@@ -133,7 +133,7 @@ class ContainerGradientExample extends StatelessWidget {
 // EXEMPLUL 6: Container cu imagine de fundal
 // ============================================================================
 class ContainerImageExample extends StatelessWidget {
-  const ContainerImageExample({Key? key}) : super(key: key);
+  const ContainerImageExample({super.key});
 
   @override
   Widget build(BuildContext context) {
@@ -154,7 +154,7 @@ class ContainerImageExample extends StatelessWidget {
 // Widget principal pentru a testa toate exemplele
 // ============================================================================
 class ContainerSizedDemo extends StatelessWidget {
-  const ContainerSizedDemo({Key? key}) : super(key: key);
+  const ContainerSizedDemo({super.key});
 
   @override
   Widget build(BuildContext context) {
