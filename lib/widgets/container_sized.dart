@@ -1,17 +1,17 @@
 import 'package:flutter/material.dart';
 
 // =============================================================================
-// CONTAINER vs SIZEDBOX - Explicație în Flutter
+// CONTAINER vs SIZEDBOX - Explanation in Flutter
 // =============================================================================
 
-// Container - Este un widget foarte flexibil care combină painting, positioning,
-// și sizing (dimensiuni). Poate avea decoration, margin, padding, etc.
+// Container - Is a very flexible widget that combines painting, positioning,
+// and sizing. It can have decoration, margin, padding, etc.
 
-// SizedBox - Este un widget simplu care stabilește exact dimensiunile (width/height)
-// pentru copilul său. Este mai performant decât Container când ai nevoie doar de dimensiuni.
+// SizedBox - Is a simple widget that sets exact dimensions (width/height)
+// for its child. It is more performant than Container when you only need dimensions.
 
 // ============================================================================
-// EXEMPLUL 1: Container cu dimensiuni și styling
+// EXAMPLE 1: Container with dimensions and styling
 // ============================================================================
 class ContainerExample extends StatelessWidget {
   const ContainerExample({super.key});
@@ -19,14 +19,14 @@ class ContainerExample extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Container(
-      width: 200, // Lățimea
-      height: 200, // Înălțimea
-      margin: const EdgeInsets.all(20), // Margine exterioară
-      padding: const EdgeInsets.all(16), // Spațiu interior
+      width: 200, // Width
+      height: 200, // Height
+      margin: const EdgeInsets.all(20), // External margin
+      padding: const EdgeInsets.all(16), // Internal padding
       decoration: BoxDecoration(
-        color: Colors.blue, // Culoarea de fundal
-        borderRadius: BorderRadius.circular(16), // Colțuri rotunjite
-        border: Border.all(color: Colors.red, width: 3), // Bordură
+        color: Colors.blue, // Background color
+        borderRadius: BorderRadius.circular(16), // Rounded corners
+        border: Border.all(color: Colors.red, width: 3), // Border
         boxShadow: [
           BoxShadow(
             color: Colors.black.withValues(alpha: 0.3),
@@ -35,8 +35,8 @@ class ContainerExample extends StatelessWidget {
           ),
         ],
       ),
-      alignment: Alignment.center, // Aliniere conținut
-      transform: Matrix4.rotationZ(0.1), // Rotire
+      alignment: Alignment.center, // Content alignment
+      transform: Matrix4.rotationZ(0.1), // Rotation
       child: const Text(
         'Container',
         style: TextStyle(color: Colors.white, fontSize: 20),
@@ -46,7 +46,7 @@ class ContainerExample extends StatelessWidget {
 }
 
 // ============================================================================
-// EXEMPLUL 2: SizedBox - doar pentru dimensiuni (mai performant)
+// EXAMPLE 2: SizedBox - only for dimensions (more performant)
 // ============================================================================
 class SizedBoxExample extends StatelessWidget {
   const SizedBoxExample({super.key});
@@ -54,8 +54,8 @@ class SizedBoxExample extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return SizedBox(
-      width: 150, // Lățime fixă
-      height: 150, // Înălțime fixă
+      width: 150, // Fixed width
+      height: 150, // Fixed height
       child: Container(
         color: Colors.green,
         alignment: Alignment.center,
@@ -66,7 +66,7 @@ class SizedBoxExample extends StatelessWidget {
 }
 
 // ============================================================================
-// EXEMPLUL 3: SizedBox pentru spațiere (în loc de Container gol)
+// EXAMPLE 3: SizedBox for spacing (instead of empty Container)
 // ============================================================================
 class SizedBoxSpacingExample extends StatelessWidget {
   const SizedBoxSpacingExample({super.key});
@@ -76,7 +76,7 @@ class SizedBoxSpacingExample extends StatelessWidget {
     return Column(
       children: [
         Container(width: 100, height: 50, color: Colors.red),
-        // SizedBox pentru spațiu vertical - mai performant decât Container gol
+        // SizedBox for vertical spacing - more performant than empty Container
         const SizedBox(height: 20),
         Container(width: 100, height: 50, color: Colors.blue),
         const SizedBox(height: 20),
@@ -87,7 +87,7 @@ class SizedBoxSpacingExample extends StatelessWidget {
 }
 
 // ============================================================================
-// EXEMPLUL 4: SizedBox.expand() - umple tot spațiul disponibil
+// EXAMPLE 4: SizedBox.expand() - fills all available space
 // ============================================================================
 class SizedBoxExpandExample extends StatelessWidget {
   const SizedBoxExpandExample({super.key});
@@ -96,13 +96,13 @@ class SizedBoxExpandExample extends StatelessWidget {
   Widget build(BuildContext context) {
     return Container(
       color: Colors.grey[300],
-      child: const SizedBox.expand(child: Text('Ocupa tot spațiul disponibil')),
+      child: const SizedBox.expand(child: Text('Fill all available space')),
     );
   }
 }
 
 // ============================================================================
-// EXEMPLUL 5: Container cu gradient
+// EXAMPLE 5: Container with gradient
 // ============================================================================
 class ContainerGradientExample extends StatelessWidget {
   const ContainerGradientExample({super.key});
@@ -130,7 +130,7 @@ class ContainerGradientExample extends StatelessWidget {
 }
 
 // ============================================================================
-// EXEMPLUL 6: Container cu imagine de fundal
+// EXAMPLE 6: Container with background image
 // ============================================================================
 class ContainerImageExample extends StatelessWidget {
   const ContainerImageExample({super.key});
@@ -151,7 +151,7 @@ class ContainerImageExample extends StatelessWidget {
 }
 
 // ============================================================================
-// Widget principal pentru a testa toate exemplele
+// Main widget to test all examples
 // ============================================================================
 class ContainerSizedDemo extends StatelessWidget {
   const ContainerSizedDemo({super.key});
