@@ -1,6 +1,6 @@
-# Learn Concepts in Flutter in 30 Days
+# 🚀 Learn Concepts in Flutter in 30 Days 📱
 
-![Flutter Icon](icons/images.png)
+![Flutter Icon](icons/icon.png)
 
 This repository contains examples and explanations for fundamental concepts in Flutter.
 
