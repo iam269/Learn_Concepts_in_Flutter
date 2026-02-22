@@ -1,6 +1,8 @@
 # 🚀 Learn Concepts in Flutter in 30 Days 📱
 
-<img src="icons/icon.png" width="900" height="60" alt="Flutter Icon">
+<p align="center">
+  <img src="icons/icon.png" width="256" height="256" alt="Flutter Icon">
+</p>
 
 This repository contains examples and explanations for fundamental concepts in Flutter.
 
