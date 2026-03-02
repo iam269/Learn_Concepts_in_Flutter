@@ -17,6 +17,8 @@ This repository contains examples and explanations for fundamental concepts in F
 | 5 | 💬 snackbar.dart | SnackBar examples for user feedback | [`lib/widgets/snackbar.dart`](lib/widgets/snackbar.dart) |
 | 6 | 🔃 dismissible.dart | Dismissible widget examples (swipe-to-delete) | [`lib/widgets/dismissible.dart`](lib/widgets/dismissible.dart) |
 | 7 | 📥 drawer.dart | Drawer examples for navigation menu | [`lib/widgets/drawer.dart`](lib/widgets/drawer.dart) |
+| 8 | 🖼️ image.dart | Image widget examples (network, asset, fit modes) | [`lib/widgets/image.dart`](lib/widgets/image.dart) |
+| 9 | ⚠️ alert_dialog.dart | AlertDialog examples for user confirmation | [`lib/widgets/alert_dialog.dart`](lib/widgets/alert_dialog.dart) |
 
 ---
 
