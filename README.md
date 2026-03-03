@@ -19,6 +19,8 @@ This repository contains examples and explanations for fundamental concepts in F
 | 7 | 📥 drawer.dart | Drawer examples for navigation menu | [`lib/widgets/drawer.dart`](lib/widgets/drawer.dart) |
 | 8 | 🖼️ image.dart | Image widget examples (network, asset, fit modes) | [`lib/widgets/image.dart`](lib/widgets/image.dart) |
 | 9 | ⚠️ alert_dialog.dart | AlertDialog examples for user confirmation | [`lib/widgets/alert_dialog.dart`](lib/widgets/alert_dialog.dart) |
+| 10 | 📄 bottom_sheet.dart | BottomSheet examples for sliding panels | [`lib/widgets/bottom_sheet.dart`](lib/widgets/bottom_sheet.dart) |
+| 11 | ✨ animated_text.dart | AnimatedText examples with various text effects | [`lib/widgets/animated_text.dart`](lib/widgets/animated_text.dart) |
 
 ---
 

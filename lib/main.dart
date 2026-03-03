@@ -4,6 +4,12 @@ import 'widgets/button.dart';
 import 'widgets/container_sized.dart';
 import 'widgets/listview_gridview.dart';
 import 'widgets/snackbar.dart';
+import 'widgets/dismissible.dart';
+import 'widgets/drawer.dart';
+import 'widgets/image.dart';
+import 'widgets/alert_dialog.dart';
+import 'widgets/bottom_sheet.dart';
+import 'widgets/animated_text.dart';
 
 void main() => runApp(const MyApp());
 
@@ -65,6 +71,48 @@ class HomeScreen extends StatelessWidget {
             title: 'SnackBar',
             description: 'Lightweight message widget for user feedback',
             widget: const SnackBarDemo(),
+          ),
+          const SizedBox(height: 12),
+          _buildCard(
+            context,
+            title: 'Dismissible',
+            description: 'Widget that can be dismissed by swiping',
+            widget: const DismissibleDemo(),
+          ),
+          const SizedBox(height: 12),
+          _buildCard(
+            context,
+            title: 'Drawer',
+            description: 'Navigation drawer widget for side menu',
+            widget: const DrawerDemo(),
+          ),
+          const SizedBox(height: 12),
+          _buildCard(
+            context,
+            title: 'Image',
+            description: 'Display images from network, assets, or memory',
+            widget: const ImageDemo(),
+          ),
+          const SizedBox(height: 12),
+          _buildCard(
+            context,
+            title: 'AlertDialog',
+            description: 'Dialog widget for user confirmation',
+            widget: const AlertDialogDemo(),
+          ),
+          const SizedBox(height: 12),
+          _buildCard(
+            context,
+            title: 'Bottom Sheet',
+            description: 'Sliding panel that appears from bottom of screen',
+            widget: const BottomSheetDemo(),
+          ),
+          const SizedBox(height: 12),
+          _buildCard(
+            context,
+            title: 'Animated Text',
+            description: 'Animated text widgets with various effects',
+            widget: const AnimatedTextDemo(),
           ),
         ],
       ),
