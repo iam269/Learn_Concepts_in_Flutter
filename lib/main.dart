@@ -10,6 +10,8 @@ import 'widgets/image.dart';
 import 'widgets/alert_dialog.dart';
 import 'widgets/bottom_sheet.dart';
 import 'widgets/animated_text.dart';
+import 'widgets/bottom_navigation.dart';
+import 'widgets/dropdown.dart';
 
 void main() => runApp(const MyApp());
 
@@ -106,6 +108,20 @@ class HomeScreen extends StatelessWidget {
             title: 'Bottom Sheet',
             description: 'Sliding panel that appears from bottom of screen',
             widget: const BottomSheetDemo(),
+          ),
+          const SizedBox(height: 12),
+          _buildCard(
+            context,
+            title: 'Bottom Navigation',
+            description: 'Bottom navigation bar for switching between views',
+            widget: const BottomNavigationDemo(),
+          ),
+          const SizedBox(height: 12),
+          _buildCard(
+            context,
+            title: 'Dropdown',
+            description: 'Dropdown button for selecting options from a list',
+            widget: const DropdownDemo(),
           ),
           const SizedBox(height: 12),
           _buildCard(
