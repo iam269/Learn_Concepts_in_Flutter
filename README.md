@@ -23,6 +23,7 @@ This repository contains examples and explanations for fundamental concepts in F
 | 11 | 📍 bottom_navigation.dart | BottomNavigation examples for tab switching | [`lib/widgets/bottom_navigation.dart`](lib/widgets/bottom_navigation.dart) |
 | 12 | 🔽 dropdown.dart | Dropdown examples for selecting options | [`lib/widgets/dropdown.dart`](lib/widgets/dropdown.dart) |
 | 13 | ✨ animated_text.dart | AnimatedText examples with various text effects | [`lib/widgets/animated_text.dart`](lib/widgets/animated_text.dart) |
+| 14 | 📝 forms.dart | Form examples with validation and TextFormField | [`lib/widgets/forms.dart`](lib/widgets/forms.dart) |
 
 ---
 
