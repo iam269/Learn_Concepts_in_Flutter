@@ -24,6 +24,7 @@ This repository contains examples and explanations for fundamental concepts in F
 | 12 | 🔽 dropdown.dart | Dropdown examples for selecting options | [`lib/widgets/dropdown.dart`](lib/widgets/dropdown.dart) |
 | 13 | ✨ animated_text.dart | AnimatedText examples with various text effects | [`lib/widgets/animated_text.dart`](lib/widgets/animated_text.dart) |
 | 14 | 📝 forms.dart | Form examples with validation and TextFormField | [`lib/widgets/forms.dart`](lib/widgets/forms.dart) |
+| 15 | 🗃️ stack_positioned.dart | Stack and Positioned examples for overlaying widgets | [`lib/widgets/stack_positioned.dart`](lib/widgets/stack_positioned.dart) |
 
 ---
 

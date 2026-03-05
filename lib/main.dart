@@ -12,6 +12,8 @@ import 'widgets/bottom_sheet.dart';
 import 'widgets/animated_text.dart';
 import 'widgets/bottom_navigation.dart';
 import 'widgets/dropdown.dart';
+import 'widgets/forms.dart';
+import 'widgets/stack_positioned.dart';
 
 void main() => runApp(const MyApp());
 
@@ -122,6 +124,21 @@ class HomeScreen extends StatelessWidget {
             title: 'Dropdown',
             description: 'Dropdown button for selecting options from a list',
             widget: const DropdownDemo(),
+          ),
+          const SizedBox(height: 12),
+          _buildCard(
+            context,
+            title: 'Forms',
+            description: 'Form widgets with validation and TextFormField',
+            widget: const FormsDemo(),
+          ),
+          const SizedBox(height: 12),
+          _buildCard(
+            context,
+            title: 'Stack and Positioned',
+            description:
+                'Stack overlays with Positioned for absolute positioning',
+            widget: const StackPositionedDemo(),
           ),
           const SizedBox(height: 12),
           _buildCard(
