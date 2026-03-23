@@ -14,6 +14,7 @@ import 'widgets/bottom_navigation.dart';
 import 'widgets/dropdown.dart';
 import 'widgets/forms.dart';
 import 'widgets/stack_positioned.dart';
+import 'widgets/tabbar.dart';
 
 void main() => runApp(const MyApp());
 
@@ -139,6 +140,13 @@ class HomeScreen extends StatelessWidget {
             description:
                 'Stack overlays with Positioned for absolute positioning',
             widget: const StackPositionedDemo(),
+          ),
+          const SizedBox(height: 12),
+          _buildCard(
+            context,
+            title: 'TabBar',
+            description: 'Tab bar widget for switching between views',
+            widget: const Tabbar(),
           ),
           const SizedBox(height: 12),
           _buildCard(
