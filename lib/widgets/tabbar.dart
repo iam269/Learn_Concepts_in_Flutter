@@ -24,8 +24,8 @@ class Tabbar extends StatelessWidget {
           children: [
             Center(child: Text('Chats')),
             Center(child: Text('Status')),
-            Center(child: Text('Calls')),
             Center(child: Text('Camera')),
+            Center(child: Text('Calls')),
           ],
         ),
       ),

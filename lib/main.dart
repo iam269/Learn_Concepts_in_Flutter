@@ -15,6 +15,7 @@ import 'widgets/dropdown.dart';
 import 'widgets/forms.dart';
 import 'widgets/stack_positioned.dart';
 import 'widgets/tabbar.dart';
+import 'widgets/imagepicker.dart';
 
 void main() => runApp(const MyApp());
 
@@ -154,6 +155,13 @@ class HomeScreen extends StatelessWidget {
             title: 'Animated Text',
             description: 'Animated text widgets with various effects',
             widget: const AnimatedTextDemo(),
+          ),
+          const SizedBox(height: 12),
+          _buildCard(
+            context,
+            title: 'Image Picker',
+            description: 'Capture or select images from gallery',
+            widget: const ImagePickerWidget(),
           ),
         ],
       ),
