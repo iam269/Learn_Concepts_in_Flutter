@@ -28,6 +28,8 @@ This repository contains examples and explanations for fundamental concepts in F
 | 16 | 🔵 tabbar.dart | TabBar examples for switching between views | [`lib/widgets/tabbar.dart`](lib/widgets/tabbar.dart) |
 | 17 | 🖼️ imagepicker.dart | ImagePicker examples for picking images from gallery/camera | [`lib/widgets/imagepicker.dart`](lib/widgets/imagepicker.dart) |
 | 18 | 📍 location.dart | Geolocator examples for getting device location | [`lib/widgets/location.dart`](lib/widgets/location.dart) |
+| 19 | 🎨 day19ui.dart | Cloning UI in Flutter - simple profile UI | [`lib/widgets/day19ui.dart`](lib/widgets/day19ui.dart) |
+| 20 | 🎨 day20.dart | Cloning complex UI in Flutter - Instagram profile | [`lib/widgets/day20.dart`](lib/widgets/day20.dart) |
 
 ---
 
