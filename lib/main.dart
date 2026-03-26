@@ -16,6 +16,7 @@ import 'widgets/forms.dart';
 import 'widgets/stack_positioned.dart';
 import 'widgets/tabbar.dart';
 import 'widgets/imagepicker.dart';
+import 'widgets/location.dart';
 
 void main() => runApp(const MyApp());
 
@@ -162,6 +163,13 @@ class HomeScreen extends StatelessWidget {
             title: 'Image Picker',
             description: 'Capture or select images from gallery',
             widget: const ImagePickerWidget(),
+          ),
+          const SizedBox(height: 12),
+          _buildCard(
+            context,
+            title: 'Location',
+            description: 'Display and interact with location data',
+            widget: const LocationWidget(),
           ),
         ],
       ),
