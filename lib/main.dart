@@ -17,6 +17,8 @@ import 'widgets/stack_positioned.dart';
 import 'widgets/tabbar.dart';
 import 'widgets/imagepicker.dart';
 import 'widgets/location.dart';
+import 'widgets/day19ui.dart';
+import 'widgets/day20.dart';
 
 void main() => runApp(const MyApp());
 
@@ -170,6 +172,20 @@ class HomeScreen extends StatelessWidget {
             title: 'Location',
             description: 'Display and interact with location data',
             widget: const LocationWidget(),
+          ),
+          const SizedBox(height: 12),
+          _buildCard(
+            context,
+            title: 'day19ui',
+            description: 'Display and interact with location data',
+            widget: const Day19(),
+          ),
+          const SizedBox(height: 12),
+          _buildCard(
+            context,
+            title: 'day20ui',
+            description: 'Display and interact with location data',
+            widget: const Day20(),
           ),
         ],
       ),
