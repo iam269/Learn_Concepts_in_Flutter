@@ -19,6 +19,7 @@ import 'widgets/imagepicker.dart';
 import 'widgets/location.dart';
 import 'widgets/day19ui.dart';
 import 'widgets/day20.dart';
+import 'widgets/day21.dart';
 
 void main() => runApp(const MyApp());
 
@@ -186,6 +187,13 @@ class HomeScreen extends StatelessWidget {
             title: 'day20ui',
             description: 'Display and interact with location data',
             widget: const Day20(),
+          ),
+          const SizedBox(height: 12),
+          _buildCard(
+            context,
+            title: 'day21ui',
+            description: 'Display App Logos with various styling',
+            widget: const AppLogos(),
           ),
         ],
       ),
